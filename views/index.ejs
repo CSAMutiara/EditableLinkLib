@@ -1,3 +1,9 @@
+<!-- Editable LinkLib NEW O1index.ejs 
+    replace old form ejs from functioning site with DESIRED form ejs
+    
+    NOTES:
+        - next (hopefully) figure out Library-->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,33 +15,61 @@
       <% include partials/header %>
     </header>
     <main>
-      <p></p>
+      <br><p></p>
       <div class="jumbotron">
         <div class="row justify-content-md-center">
-          <h1>Link Submission Form:</h1>
+          <h1>Welcome to LinkLib!</h1>
           <br>
         </div>
-        <div class="justify-content-md-center">
-          <form>
-            <div class="container">
-              <div class="row justify-content-md-center">
-                <div class="col col-lg-11">
-                  <input type="text" class="form-control" name="item" placeholder="CHANGE MADE..." required/>
-                </div>
-              </div>
+        <div class="row justify-content-md-center">
+          <p>Your reliable link library.</p>
+          <br>
+        </div>
+        <br>
+        <div id="link-table">
+          <p></p><br>
+          <div class="justify-content-md-center">
+            <div class="row justify-content-md-center">
+              <h5>Link Submission Form:</h5>
               <br>
-              <div class="row justify-content-md-center">
-                <div class="col-3"></div>
-                <div class="col-3">
-                  <input type="text" class="form-control" name="name" placeholder="Give it a name..." required/>
-                </div>
-                <div class="col-1">
-                  <button type="submit" class="btn btn-light">Add Link</button>
-                </div>
-                <div class="col-4"></div>
-              </div>
             </div>
-          </form>
+            <br>
+            <form method="POST" action='/linkd'>
+              <div class="container">
+                <div class="row justify-content-md-center">
+                  <div class="col col-lg-11">
+                    <input type="text" class="form-control form-control-lg" name="item" placeholder="Paste url here..." required/>
+                  </div>
+                </div>
+                <br>
+                <div class="row justify-content-md-center">
+                  <div class="col-3">
+                    <input type="text" class="form-control" name="name" placeholder="Give it a name..." required/>
+                  </div>
+                  <div class="col-8">
+                    <input type="text" class="form-control" name="details" placeholder="Add a description..." required/>
+                  </div>
+                </div>
+                <br>
+                <div class="row justify-content-md-center">  
+                  <div class="col-1"></div>
+                  <label>Urgent/Useful/General/Favorite/Other:</label>
+                  <div class="col-2">
+                    <input type="text" class="form-control" name="category" placeholder="Type category..." required/>
+                  </div>
+                  <label>Submission Date:</label>
+                  <div class="col-2">
+                    <input type="text" class="form-control" name="date" placeholder="mm/dd/yy" required/>
+                  </div>
+                  <div class="col-2">
+                    <button type="submit" class="btn btn-light">Add Link</button>
+                  </div>
+                  <div class="col-1"></div>
+                </div>
+                <br>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </main>
@@ -44,3 +78,4 @@
     </footer>
   </body>
 </html>
+
