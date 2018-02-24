@@ -1,12 +1,17 @@
-<!-- Editable LinkLib NEW O3header.ejs 
-    updated nav-links to have appropriate names 
+<!-- Editable LinkLib NEW.2 header.ejs 
+    updated with nav-links from Oheader.ejs to fix links because O1header.ejs
+    with DESIRED link NAMES & options don't have functioning links but
+    Oheader.ejs DOES have functioning links 
     
     NOTES:
-        - hrefs to be updated later once controllers figured out-->
+        - Home goes to submission form which should be the navbar logo
+        - the navbar logo link doesn't work
+        - About goes to another page which could be used for Library
+        - the others don't connect well -->
 
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="/">LinkLib</a>
+        <a class="navbar-brand" href="/form">LinkLib</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -14,22 +19,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a  class="nav-link" href="/about">Library</a>
+                    <a  class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a  class="nav-link" href="/form">TEMP?</a>
+                    <a  class="nav-link" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a  class="nav-link" href="/users">TEMP?</a>
+                    <a  class="nav-link" href="/users">Users</a>
                 </li>
                 <li class="nav-item">
-                    <a  class="nav-link" href="/courses">TEMP?</a>
+                    <a  class="nav-link" href="/courses">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a  class="nav-link" href="/links">TEMP?</a>
+                    <a  class="nav-link" href="/links">Links</a>
                 </li>
                 <li class="nav-item">
-                    <a  class="nav-link" href="/todos">TEMP?</a>
+                    <a  class="nav-link" href="/todos">Todo</a>
                 </li>
             </ul>
         </div>
